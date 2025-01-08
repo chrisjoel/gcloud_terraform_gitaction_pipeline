@@ -11,6 +11,7 @@
 ## Docker documentation ##
 
 - https://registry.terraform.io/browse/modules?provider=google
+- https://registry.terraform.io/providers/hashicorp/google/latest/docs
 - create the dockerfile with the necessary configuration file
 - gcloud auth login
 - gcloud auth configure-docker
