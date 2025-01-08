@@ -1,19 +1,6 @@
 # PHP-FPM pipeline terraform #
+
 ## Autor Joel Ebenka ##
-
-terraform_project/
-├── main.tf
-├── variables.tf
-├── terraform.tfvars
-├── modules/
-│   ├── cloud_sql/
-│   │   └── main.tf
-│   ├── storage_bucket/
-│   │   └── main.tf
-│   ├── cloud_run/
-│   │   └── main.tf
-└── README.md
-
 
 ## Prerequisites ##
 - Write the dockerfile and create the docker image
@@ -30,4 +17,9 @@ terraform_project/
 
 
 ## Terraform configuration ##
-- 
+Use modules and tfvars for reusability and to follow terraform best practices
+- terraform init
+- terraform validate
+- terraform plan -var-file=terraform.tfvars
+- terraform apply -var-file=terraform.tfvars --auto-approve
+- terraform destroy -var-file=terraform.tfvars --auto-approve
