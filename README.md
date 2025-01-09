@@ -18,6 +18,10 @@
 - docker tag  php-fpm-app:joel gcr.io/project_id/php-fpm-app:joel
 - docker push gcr.io/project_id/php-fpm-app:joel
 
+## NOTE: ##  
+We need to activate all the required API and service account
+- artifact registry
+- cloud run admin
 
 ## Terraform configuration ##
 
